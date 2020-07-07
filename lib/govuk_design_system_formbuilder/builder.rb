@@ -18,6 +18,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
@@ -61,6 +63,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
@@ -105,6 +109,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
@@ -147,6 +153,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
@@ -188,6 +196,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
@@ -230,6 +240,8 @@ module GOVUKDesignSystemFormBuilder
     # @option caption size [String] the size of the caption, can be +xl+, +l+ or +m+. Defaults to +m+
     # @option args [Hash] args additional arguments are applied as attributes to the +input+ element
     # @param form_group_classes [Array,String] Classes to add to the surrounding +form-group+
+    # @param prefix_text [String] the text placed before the input. No prefix will be added if left +nil+
+    # @param suffix_text [String] the text placed after the input. No suffix will be added if left +nil+
     # @param block [Block] arbitrary HTML that will be rendered between the hint and the input
     # @return [ActiveSupport::SafeBuffer] HTML output
     # @see https://design-system.service.gov.uk/components/text-input/ GOV.UK Text input
