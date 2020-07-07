@@ -41,8 +41,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_text_field :callsign,
     #     label: -> { tag.h3('Call-sign') }
     #
-    def govuk_text_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, **args, &block)
-      Elements::Inputs::Text.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_text_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::Text.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a input of type +tel+
@@ -85,8 +85,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_phone_field :work_number,
     #     label: -> { tag.h3('Work number') }
     #
-    def govuk_phone_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, **args, &block)
-      Elements::Inputs::Phone.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_phone_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::Phone.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a input of type +email+
@@ -127,8 +127,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_email_field :personal_email,
     #     label: -> { tag.h3('Personal email address') }
     #
-    def govuk_email_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, **args, &block)
-      Elements::Inputs::Email.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_email_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::Email.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a input of type +password+
@@ -168,8 +168,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_password_field :passcode,
     #     label: -> { tag.h3('What is your secret pass code?') }
     #
-    def govuk_password_field(attribute_name, hint_text: nil, label: {}, width: nil, form_group_classes: nil, caption: {}, **args, &block)
-      Elements::Inputs::Password.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_password_field(attribute_name, hint_text: nil, label: {}, width: nil, form_group_classes: nil, caption: {}, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::Password.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a input of type +url+
@@ -210,8 +210,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_url_field :work_website,
     #     label: -> { tag.h3("Enter your company's website") }
     #
-    def govuk_url_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, **args, &block)
-      Elements::Inputs::URL.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_url_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::URL.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a input of type +number+
@@ -255,8 +255,8 @@ module GOVUKDesignSystemFormBuilder
     #   = f.govuk_url_field :personal_best_over_100m,
     #     label: -> { tag.h3("How many seconds does it take you to run 100m?") }
     #
-    def govuk_number_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, **args, &block)
-      Elements::Inputs::Number.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, **args, &block).html
+    def govuk_number_field(attribute_name, hint_text: nil, label: {}, caption: {}, width: nil, form_group_classes: nil, prefix_text: nil, suffix_text: nil, **args, &block)
+      Elements::Inputs::Number.new(self, object_name, attribute_name, hint_text: hint_text, label: label, caption: caption, width: width, form_group_classes: form_group_classes, prefix_text: prefix_text, suffix_text: suffix_text, **args, &block).html
     end
 
     # Generates a +textarea+ element with a label, optional hint. Also offers
